@@ -1,0 +1,5 @@
+{
+  "name": "Meeting Action Tracker",
+  "description": "A professional tool for tracking meeting outcomes, featuring AI-assisted action item extraction and robust validation rules.",
+  "requestFramePermissions": []
+}

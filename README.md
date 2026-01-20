@@ -1,4 +1,20 @@
-# Meeting-Action-Tracker
-This project is a verify-first meeting action system built on the Gemini 3 API. Users paste meeting notes or add items manually, and Gemini 3 converts raw notes into structured action candidates (title, owner, due date) using strict JSON outputs, making AI results directly usable by the app rather than a chat transcript. 
-The core value is reliability: the app enforces explicit rules (no duplicate titles on the same due date, done items become read-only, overdue items show a visible badge) and then proves those behaviors with an integrated validation workflow. 
-In the Tests tab, a one-click test runner generates an observation log of UI actions and app state, and Gemini 3 produces a validation report that marks each requirement and test case as pass/fail/unknown with evidence. Gemini 3 also detects ambiguities or conflicts in rules/specs and can block unsafe builds instead of guessing. This turns Gemini 3 into the system’s reasoning and verification engine—powering structured extraction, rule-aware validation, and auditable test reports—rather than a generic conversational interface. 
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
+
+# Run and deploy your AI Studio app
+
+This contains everything you need to run your app locally.
+
+View your app in AI Studio: https://ai.studio/apps/drive/1S9DXvgZS_fuPqTjPQGh6jojO1eB0EG7r
+
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
